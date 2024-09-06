@@ -28,12 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            label1 = new Label();
+            tb_nome = new TextBox();
+            button1 = new Button();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(161, 103);
+            label1.Name = "label1";
+            label1.Size = new Size(99, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Nome do usuario";
+            // 
+            // tb_nome
+            // 
+            tb_nome.Location = new Point(161, 135);
+            tb_nome.Name = "tb_nome";
+            tb_nome.Size = new Size(192, 23);
+            tb_nome.TabIndex = 1;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(161, 178);
+            button1.Name = "button1";
+            button1.Size = new Size(90, 23);
+            button1.TabIndex = 2;
+            button1.Text = "Exibir Nome";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Controls.Add(tb_nome);
+            Controls.Add(label1);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private TextBox tb_nome;
+        private Button button1;
     }
 }
